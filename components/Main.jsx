@@ -23,16 +23,16 @@ const Main = () => {
             front-end tout en apprenant les technologies back-end.
           </p>
           <div className="flex items-center justify-center max-w-[330px] m-auto py-4">
-            <Link href="https://www.linkedin.com/in/matthieu-brenne-69b627202/">
+            <a href="https://www.linkedin.com/in/matthieu-brenne-69b627202/" target="_blank">
               <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 mr-5">
                 <FaLinkedinIn />
               </div>
-            </Link>
-            <Link href="https://github.com/matthieubrenne">
+            </a>
+            <a href="https://github.com/matthieubrenne" target="_blank">
               <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 mr-5">
                 <FaGithub />
               </div>
-            </Link>
+            </a>
             <Link href="/#contact">
               <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                 <AiOutlineMail />

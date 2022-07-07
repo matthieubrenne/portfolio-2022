@@ -63,6 +63,7 @@ const Navbar = () => {
             alt="image logo"
             width="70"
             height="50"
+            className='cursor-pointer'
           />
         </Link>
         <div>
@@ -122,6 +123,7 @@ const Navbar = () => {
                 width="70"
                 height="50"
                 alt="image logo"
+                className='cursor-pointer'
               />
             </Link>
             <div
@@ -184,16 +186,16 @@ const Navbar = () => {
                 Connectons nous!
               </p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
-                <Link href="https://www.linkedin.com/in/matthieu-brenne-69b627202/">
+                <a href="https://www.linkedin.com/in/matthieu-brenne-69b627202/" target="_blank">
                   <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
                     <FaLinkedinIn />
                   </div>
-                </Link>
-                <Link href="https://github.com/matthieubrenne">
+                </a>
+                <a href="https://github.com/matthieubrenne" target="_blank">
                   <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
                     <FaGithub />
                   </div>
-                </Link>
+                </a>
                 <Link href="/#contact">
                   <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
                     <AiOutlineMail />

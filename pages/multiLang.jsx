@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import React from 'react';
-import propertyImg from '../public/assets/projects/project.png';
+import multiLangImg from '../public/assets/projects/multiLang.png'
 import { RiRadioButtonFill } from 'react-icons/ri';
 import Link from 'next/link';
 
-const projet1 = () => {
+const multiLang = () => {
   return (
     <div className="w-full">
       <div className="w-screen h-[50vh] relative">
@@ -13,12 +13,12 @@ const projet1 = () => {
           className="absolute z-1"
           layout="fill"
           objectFit="cover"
-          src={propertyImg}
+          src={multiLangImg}
           alt="image projet"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h2 className="py-2">Projet1</h2>
-          <h3>React JS / Tailwind / Firebase</h3>
+          <h2 className="py-2">Multi Langues</h2>
+          <h3>ReactJS</h3>
         </div>
       </div>
 
@@ -27,16 +27,21 @@ const projet1 = () => {
           <p>Projet</p>
           <h2>Aperçu</h2>
           <p>
-            is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard
-            dummy text ever since the 1500s, when an unknown printer
-            took a galley of type and scrambled it to make a type
-            specimen book.
+            Mini projet ReactJS. Créer une application de multi Langues.
+            Dans ce projet j'ai appris à utiliser le contexte.
           </p>
-          <a href="#" target="_blank" rel="noreferrer">
+          <a
+            href="https://github.com/matthieubrenne/react-multi-langues"
+            target="_blank"
+            rel="noreferrer"
+          >
             <button className="px-8 py-2 mt-4 mr-8">Code</button>
           </a>
-          <a href="#" target="_blank" rel="noreferrer">
+          <a
+            href="https://react-multi-langues-6cb2sfyr0-matthieubrenne.vercel.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <button className="px-8 py-2 mt-4">Demo</button>
           </a>
         </div>
@@ -45,22 +50,7 @@ const projet1 = () => {
             <p className="text-center font-bold pb-2">Technologies</p>
             <div className="grid grid-cols-3 md:grid-cols-1">
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> React
-              </p>
-              <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Tailwind
-              </p>
-              <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Javascript
-              </p>
-              <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Firebase
-              </p>
-              <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Google API
-              </p>
-              <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Zillow API
+                <RiRadioButtonFill className="pr-1" /> ReactJS
               </p>
             </div>
           </div>
@@ -73,4 +63,4 @@ const projet1 = () => {
   );
 };
 
-export default projet1;
+export default multiLang;
