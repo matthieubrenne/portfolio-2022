@@ -10,11 +10,10 @@ export default function Home() {
     <div>
       <Head>
         <title>Matthieu Brenne | Développeur Front-end</title>
-        <meta charSet="utf-8" />
-        <meta name="description" content="That's it!" />
         <meta
-          name="viewport"
-          content="initial-scale=1.0, width=device-width"
+          charset="UTF-8"
+          name="description"
+          content="Je suis Matthieu, développeur Front-End. N'hesitez pas a visiter mon portfolio afin de découvrir mon univers !"
         />
         <link rel="icon" href="/logo.ico" />
       </Head>
