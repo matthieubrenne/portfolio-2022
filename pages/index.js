@@ -11,7 +11,7 @@ export default function Home() {
       <Head>
         <title>Matthieu Brenne | Développeur Front-end</title>
         <meta
-          charset="UTF-8"
+          charset="utf-8"
           name="description"
           content="Je suis Matthieu, développeur Front-End. N'hesitez pas a visiter mon portfolio afin de découvrir mon univers !"
         />

@@ -28,7 +28,7 @@ const authentification = () => {
           <h2>Aperçu</h2>
           <p>
             Mini projet ReactJS. Créer une application
-            d'authentification d'utilisateurs'. Pour ce projet j'ai
+            d'authentification d'utilisateurs. Pour ce projet j'ai
             utilisé la plateforme Firebase et le contexte.
           </p>
           <a
