@@ -2,13 +2,12 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { AiOutlineMail } from 'react-icons/ai';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
-import { HiOutlineChevronDoubleUp } from 'react-icons/hi'
+import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
 
 const Contact = () => {
   return (
-    <div id='contact' className="w-full lg:h-screen">
+    <div id="contact" className="w-full lg:h-screen">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
         <p className="text-xl tracking-widest uppercase text-[#5651e5]">
           Contact
@@ -40,19 +39,17 @@ const Contact = () => {
               <p className="uppercase pt-8 tracking-widest text-[#5651e5] text-center">
                 Connectons nous
               </p>
-              <div className="flex items-center justify-between py-4">
-                <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                  <FaLinkedinIn />
-                </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                  <FaGithub />
-                </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                  <AiOutlineMail />
-                </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                  <BsFillPersonLinesFill />
-                </div>
+              <div className="flex items-center justify-center py-4">
+                <Link href="https://www.linkedin.com/in/matthieu-brenne-69b627202/">
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 mr-5">
+                    <FaLinkedinIn />
+                  </div>
+                </Link>
+                <Link href="https://github.com/matthieubrenne">
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                    <FaGithub />
+                  </div>
+                </Link>
               </div>
             </div>
           </div>
@@ -82,7 +79,7 @@ const Contact = () => {
                     />
                   </div>
                 </div>
-                <div className='flex flex-col py-2'>
+                <div className="flex flex-col py-2">
                   <label className="uppercase text-sm py-2">
                     Email
                   </label>
@@ -91,7 +88,7 @@ const Contact = () => {
                     type="email"
                   />
                 </div>
-                <div className='flex flex-col py-2'>
+                <div className="flex flex-col py-2">
                   <label className="uppercase text-sm py-2">
                     Sujet
                   </label>
@@ -100,23 +97,31 @@ const Contact = () => {
                     type="text"
                   />
                 </div>
-                <div className='flex flex-col py-2'>
+                <div className="flex flex-col py-2">
                   <label className="uppercase text-sm py-2">
                     Message
                   </label>
-                  <textarea className='border-2 rounded-lg p-3 border-gray-300' rows='10'></textarea>
+                  <textarea
+                    className="border-2 rounded-lg p-3 border-gray-300"
+                    rows="10"
+                  ></textarea>
                 </div>
-                <button className='w-full p-4 text-gray-100 mt-4'>Envoyer le message</button>
+                <button className="w-full p-4 text-gray-100 mt-4">
+                  Envoyer le message
+                </button>
               </form>
             </div>
           </div>
         </div>
-        <div className='flex justify-center py-12'>
-            <Link href='/'>
-                <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
-                   <HiOutlineChevronDoubleUp className='text-[#5651e5]' size={30}/> 
-                </div>
-            </Link>
+        <div className="flex justify-center py-12">
+          <Link href="/">
+            <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
+              <HiOutlineChevronDoubleUp
+                className="text-[#5651e5]"
+                size={30}
+              />
+            </div>
+          </Link>
         </div>
       </div>
     </div>

@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import React from 'react';
 import ProjectItem from '../components/ProjectItem';
 import projectImg from '../public/assets/projects/project.png';

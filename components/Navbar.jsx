@@ -49,7 +49,7 @@ const Navbar = () => {
 
   return (
     <div
-      style={{backgroundColor: `${navBg}`}}
+      style={{ backgroundColor: `${navBg}` }}
       className={
         shadow
           ? 'fixed w-full h-20 shadow-xl z-[100]'
@@ -61,12 +61,15 @@ const Navbar = () => {
           <Image
             src="/../public/assets/logo.png"
             alt="image logo"
-            width="60"
+            width="70"
             height="50"
           />
         </Link>
         <div>
-          <ul style={{color: `${linkColor}`}} className="hidden md:flex">
+          <ul
+            style={{ color: `${linkColor}` }}
+            className="hidden md:flex"
+          >
             <Link href="/">
               <li className="ml-10 text-sm uppercase hover:border-b">
                 Accueil
@@ -116,8 +119,8 @@ const Navbar = () => {
             <Link href="/">
               <Image
                 src="/../public/assets/logo.png"
-                width="87"
-                height="35"
+                width="70"
+                height="50"
                 alt="image logo"
               />
             </Link>
@@ -181,18 +184,21 @@ const Navbar = () => {
                 Connectons nous!
               </p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <FaLinkedinIn />
-                </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <FaGithub />
-                </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <AiOutlineMail />
-                </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <BsFillPersonLinesFill />
-                </div>
+                <Link href="https://www.linkedin.com/in/matthieu-brenne-69b627202/">
+                  <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                    <FaLinkedinIn />
+                  </div>
+                </Link>
+                <Link href="https://github.com/matthieubrenne">
+                  <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                    <FaGithub />
+                  </div>
+                </Link>
+                <Link href="/#contact">
+                  <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                    <AiOutlineMail />
+                  </div>
+                </Link>
               </div>
             </div>
           </div>

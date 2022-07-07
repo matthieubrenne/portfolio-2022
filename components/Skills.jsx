@@ -1,6 +1,16 @@
-import Image from 'next/image';
 import React from 'react';
-// import Skill from './Skill';
+import Skill from '../components/Skill';
+import htmlImg from '../public/assets/skills/html.png'
+import cssImg from '../public/assets/skills/css.png'
+import jsImg from '../public/assets/skills/javascript.png'
+import reactImg from '../public/assets/skills/react.png'
+import rsImg from '../public/assets/skills/redux-saga.png'
+import nodeImg from '../public/assets/skills/node.png'
+import nextImg from '../public/assets/skills/nextjs.png'
+import symfonyImg from '../public/assets/skills/symfony.png'
+import awsImg from '../public/assets/skills/aws.png'
+import tailwindImg from '../public/assets/skills/tailwind.png'
+import githubImg from '../public/assets/skills/github1.png'
 
 const Skills = () => {
   const images = [];
@@ -13,172 +23,17 @@ const Skills = () => {
         </p>
         <h2 className="py-4">Ce que je sais faire</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* TODO: utiliser composant "skill" avec props */}
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
-            <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
-                <Image
-                  src="/../public/assets/skills/html.png"
-                  width="64px"
-                  height="64px"
-                  alt="image compétence"
-                />
-              </div>
-              <div className="flex flex-col items-center justify-center">
-                <h3>HTML</h3>
-              </div>
-            </div>
-          </div>
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
-            <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
-                <Image
-                  src="/../public/assets/skills/css.png"
-                  width="64px"
-                  height="64px"
-                  alt="image compétence"
-                />
-              </div>
-              <div className="flex flex-col items-center justify-center">
-                <h3>CSS</h3>
-              </div>
-            </div>
-          </div>
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
-            <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
-                <Image
-                  src="/../public/assets/skills/javascript.png"
-                  width="64px"
-                  height="64px"
-                  alt="image compétence"
-                />
-              </div>
-              <div className="flex flex-col items-center justify-center">
-                <h3>JAVASCRIPT</h3>
-              </div>
-            </div>
-          </div>
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
-            <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
-                <Image
-                  src="/../public/assets/skills/react.png"
-                  width="64px"
-                  height="64px"
-                  alt="image compétence"
-                />
-              </div>
-              <div className="flex flex-col items-center justify-center">
-                <h3>REACTJS</h3>
-              </div>
-            </div>
-          </div>
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
-            <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
-                <Image
-                  src="/../public/assets/skills/node.png"
-                  width="64px"
-                  height="64px"
-                  alt="image compétence"
-                />
-              </div>
-              <div className="flex flex-col items-center justify-center">
-                <h3>NODEJS</h3>
-              </div>
-            </div>
-          </div>
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
-            <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
-                <Image
-                  src="/../public/assets/skills/nextjs.png"
-                  width="64px"
-                  height="64px"
-                  alt="image compétence"
-                />
-              </div>
-              <div className="flex flex-col items-center justify-center">
-                <h3>NEXTJS</h3>
-              </div>
-            </div>
-          </div>
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
-            <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
-                <Image
-                  src="/../public/assets/skills/redux-saga.png"
-                  width="64px"
-                  height="64px"
-                  alt="image compétence"
-                />
-              </div>
-              <div className="flex flex-col items-center justify-center">
-                <h3>REDUX-SAGA</h3>
-              </div>
-            </div>
-          </div>
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
-            <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
-                <Image
-                  src="/../public/assets/skills/symfony.png"
-                  width="64px"
-                  height="64px"
-                  alt="image compétence"
-                />
-              </div>
-              <div className="flex flex-col items-center justify-center">
-                <h3>SYMFONY</h3>
-              </div>
-            </div>
-          </div>
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
-            <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
-                <Image
-                  src="/../public/assets/skills/tailwind.png"
-                  width="64px"
-                  height="64px"
-                  alt="image compétence"
-                />
-              </div>
-              <div className="flex flex-col items-center justify-center">
-                <h3>TAILWIND</h3>
-              </div>
-            </div>
-          </div>
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
-            <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
-                <Image
-                  src="/../public/assets/skills/github1.png"
-                  width="64px"
-                  height="64px"
-                  alt="image compétence"
-                />
-              </div>
-              <div className="flex flex-col items-center justify-center">
-                <h3>GITHUB</h3>
-              </div>
-            </div>
-          </div>
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
-            <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
-                <Image
-                  src="/../public/assets/skills/aws.png"
-                  width="64px"
-                  height="64px"
-                  alt="image compétence"
-                />
-              </div>
-              <div className="flex flex-col items-center justify-center">
-                <h3>AWS</h3>
-              </div>
-            </div>
-          </div>
+          <Skill title= "HTML" skillImage={htmlImg}/>
+          <Skill title= "CSS" skillImage={cssImg}/>
+          <Skill title= "JAVASCRIPT" skillImage={jsImg}/>
+          <Skill title= "REACTJS" skillImage={reactImg}/>
+          <Skill title= "REDUX-SAGA" skillImage={rsImg}/>
+          <Skill title= "NODEJS" skillImage={nodeImg}/>
+          <Skill title= "NEXTJS" skillImage={nextImg}/>
+          <Skill title= "SYMFONY" skillImage={symfonyImg}/>
+          <Skill title= "AWS" skillImage={awsImg}/>
+          <Skill title= "TAILWIND" skillImage={tailwindImg}/>
+          <Skill title= "GITHUB" skillImage={githubImg}/>
         </div>
       </div>
     </div>
