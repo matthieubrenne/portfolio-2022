@@ -40,12 +40,12 @@ const Contact = () => {
                 Connectons nous
               </p>
               <div className="flex items-center justify-center py-4">
-                <a href="https://www.linkedin.com/in/matthieu-brenne-69b627202/" target="_blank" rel="noreferrer">
+                <a href="https://www.linkedin.com/in/matthieu-brenne-69b627202/">
                   <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 mr-5">
                     <FaLinkedinIn />
                   </div>
                 </a>
-                <a href="https://github.com/matthieubrenne" target="_blank" rel="noreferrer">
+                <a href="https://github.com/matthieubrenne">
                   <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                     <FaGithub />
                   </div>
