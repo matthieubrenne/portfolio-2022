@@ -14,7 +14,7 @@ const About = () => {
           </p>
           <h2 className="py-4">Qui suis-je?</h2>
           <p className="py-2 text-gray-600">
-            // Je ne suis pas un développeur normal
+            - Je ne suis pas un développeur normal -
           </p>
           <p className="py-2 text-gray-600">
             Passionné depuis toujours par les nouvelles technologies
