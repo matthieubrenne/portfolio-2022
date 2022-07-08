@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import avatar from '../public/assets/profile.png'
 
 const About = () => {
   return (
@@ -42,7 +43,7 @@ const About = () => {
         </div>
         <div className="animate-float">
           <Image
-            src="/../public/assets/profile.png"
+            src={avatar}
             width="920"
             height="1020"
             alt="image avatar"
