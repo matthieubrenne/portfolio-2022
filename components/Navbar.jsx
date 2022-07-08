@@ -7,8 +7,8 @@ import {
   AiOutlineMenu,
 } from 'react-icons/ai';
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { useRouter } from 'next/router';
+import logoImg from '../public/assets/logo.png'
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -59,7 +59,7 @@ const Navbar = () => {
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Link href="/">
           <Image
-            src="/../public/assets/logo.png"
+            src={logoImg}
             alt="image logo"
             width="70"
             height="50"
