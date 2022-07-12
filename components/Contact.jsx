@@ -12,7 +12,7 @@ const Contact = () => {
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
 
-  const handleSubmit = e => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     const data = {
       name,
@@ -21,7 +21,7 @@ const Contact = () => {
       subject,
       message,
     };
-    
+
     fetch('/api/contact', {
       method: 'post',
       body: JSON.stringify(data),
@@ -48,7 +48,7 @@ const Contact = () => {
                   height="400"
                 />
               </div>
-              <div>aaaaaa
+              <div>
                 <h2 className="py-2">Matthieu Brenne</h2>
                 <p>Développeur Front-End</p>
                 <p className="py-4">
