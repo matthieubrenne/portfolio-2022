@@ -185,10 +185,10 @@ const Contact = () => {
             </div>
             {send && (
               <div
-                class="bg-blue-100 border-t border-b border-blue-500 text-blue-700 px-4 py-3"
+                className="bg-blue-100 border-t border-b border-blue-500 text-blue-700 px-4 py-3"
                 role="alert"
               >
-                <p class="text-sm text-center">
+                <p className="text-sm text-center">
                   Votre message a bien été envoyé.
                 </p>
               </div>
