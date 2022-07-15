@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
 import contactImg from '../public/assets/contact.png';
@@ -11,6 +11,7 @@ const Contact = () => {
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
+  const [send, setSend] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -26,6 +27,12 @@ const Contact = () => {
       method: 'post',
       body: JSON.stringify(data),
     });
+
+    setSend(true);
+  };
+
+  const cancelCourse = () => {
+    document.getElementById('contact-form').reset();
   };
 
   return (
@@ -78,7 +85,7 @@ const Contact = () => {
           {/* right */}
           <div className="col-span-3 w-full h-auto shadow-gray-400 rounded-xl lg:p-4 pt-40">
             <div className="p-4">
-              <form onSubmit={handleSubmit}>
+              <form onSubmit={handleSubmit} id="contact-form">
                 <div className="grid md-grid-cols-2 gap-4 w-full py-2">
                   <div className="flex flex-col">
                     <label
@@ -165,12 +172,23 @@ const Contact = () => {
                 </div>
                 <button
                   className="w-full p-4 text-gray-100 mt-4"
-                  // type="submit"
+                  name="cancelCourse"
+                  onClick={cancelCourse}
                 >
                   Envoyer le message
                 </button>
               </form>
             </div>
+            {send && (
+              <div
+                class="bg-blue-100 border-t border-b border-blue-500 text-blue-700 px-4 py-3"
+                role="alert"
+              >
+                <p class="text-sm text-center">
+                  Votre message a bien été envoyé.
+                </p>
+              </div>
+            )}
           </div>
         </div>
         <div className="flex justify-center py-12">
