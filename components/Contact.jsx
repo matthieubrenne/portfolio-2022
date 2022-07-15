@@ -29,6 +29,10 @@ const Contact = () => {
     });
 
     setSend(true);
+
+    setTimeout(() => {
+      setSend(false);
+    }, '3000');
   };
 
   const cancelCourse = () => {
