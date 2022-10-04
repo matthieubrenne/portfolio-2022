@@ -16,7 +16,7 @@ const Main = () => {
             Je suis <span className="text-[#5651e5]"> Matthieu</span>
           </h1>
           <h1 className="py-4 text-gray-700">
-            Développeur Front-End
+            Développeur Web
           </h1>
           <p className="py-4 text-gray-600 max-w-[70%] m-auto">
             Je me concentre sur la création d'applications Web
