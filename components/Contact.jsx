@@ -61,7 +61,7 @@ const Contact = () => {
               </div>
               <div>
                 <h2 className="py-2">Matthieu Brenne</h2>
-                <p>Développeur Front-End</p>
+                <p>Développeur Web</p>
                 <p className="py-4">
                   Intéressé à travailler ensemble ? Contactez moi et
                   parlons-en.
